@@ -1,0 +1,22 @@
+<h2>Actualizar producto</h2>
+
+<form  class="form">
+    <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id" [(ngModel)]="product.id"  class="form-control">
+      </div>
+  <div class="form-group">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="product.name"  class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="description">Descripción:</label>
+    <textarea id="description" name="description" [(ngModel)]="product.description"  class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="price">Precio:</label>
+    <input type="number" id="price" name="price" [(ngModel)]="product.price"  class="form-control">
+  </div>
+  <br>
+  <button  (click)="updateProduct()" class="btn btn-primary">Actualizar producto</button>
+</form>
